@@ -1,0 +1,13 @@
+<button type="button" onclick={{action 'openModal'}}>
+  Open modal
+</button>
+
+{{#if didSomethingInTheModal}}
+  <div class="succeeded">ok, it worked</div>
+{{/if}}
+
+{{#if showModal}}
+  {{custom-modal
+    thingSelected=(action 'markThingAsDone')
+  }}
+{{/if}}

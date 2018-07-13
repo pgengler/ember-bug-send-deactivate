@@ -1,0 +1,12 @@
+{{#modal-dialog}}
+  <div class="select-container">
+    {{#power-select-typeahead
+        initiallyOpened=true
+        onchange=thingSelected
+        options=things
+      as |thing|
+    }}
+      {{thing}}
+    {{/power-select-typeahead}}
+  </div>
+{{/modal-dialog}}
